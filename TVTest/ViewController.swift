@@ -39,7 +39,7 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reusableCell", for: indexPath) as? CustomCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.backgroundColor = colors[indexPath.row % 7]
+        cell.addGradient(colors[indexPath.row % 7])
         
         return cell
     }
