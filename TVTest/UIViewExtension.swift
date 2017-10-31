@@ -14,13 +14,13 @@ extension UIView {
         
         var xTilt = UIInterpolatingMotionEffect()
         xTilt = UIInterpolatingMotionEffect(keyPath: "layer.transform.rotation.y", type: .tiltAlongHorizontalAxis)
-        xTilt.minimumRelativeValue = tiltValue
-        xTilt.maximumRelativeValue = -tiltValue
+        xTilt.minimumRelativeValue = -tiltValue
+        xTilt.maximumRelativeValue = tiltValue
         
         var yTilt = UIInterpolatingMotionEffect()
         yTilt = UIInterpolatingMotionEffect(keyPath: "layer.transform.rotation.x", type: .tiltAlongVerticalAxis)
-        yTilt.minimumRelativeValue = -tiltValue
-        yTilt.maximumRelativeValue = tiltValue
+        yTilt.minimumRelativeValue = tiltValue
+        yTilt.maximumRelativeValue = -tiltValue
         
         var xPan = UIInterpolatingMotionEffect()
         xPan = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
