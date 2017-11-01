@@ -13,6 +13,11 @@
 		3C1C9A571FA8EB2000AFAFBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1C9A561FA8EB2000AFAFBE /* Assets.xcassets */; };
 		3C1C9A5F1FA8EE7900AFAFBE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C9A5E1FA8EE7900AFAFBE /* CustomCollectionViewCell.swift */; };
 		3C1C9A611FA8FFBA00AFAFBE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C9A601FA8FFBA00AFAFBE /* UIViewExtension.swift */; };
+		3CE01E401FAA1998008B8538 /* ImageViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE01E3F1FAA1998008B8538 /* ImageViewCollectionViewCell.swift */; };
+		3CE01E421FAA50F5008B8538 /* OverlayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE01E411FAA50F5008B8538 /* OverlayCollectionViewCell.swift */; };
+		3CE01E441FAA512A008B8538 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE01E431FAA512A008B8538 /* OverlayView.xib */; };
+		3CE01E461FAA5199008B8538 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE01E451FAA5199008B8538 /* OverlayView.swift */; };
+		3CE01E4C1FAA5A71008B8538 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE01E4B1FAA5A71008B8538 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		3C1C9A581FA8EB2000AFAFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C1C9A5E1FA8EE7900AFAFBE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C1C9A601FA8FFBA00AFAFBE /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		3CE01E3F1FAA1998008B8538 /* ImageViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		3CE01E411FAA50F5008B8538 /* OverlayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayCollectionViewCell.swift; sourceTree = "<group>"; };
+		3CE01E431FAA512A008B8538 /* OverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		3CE01E451FAA5199008B8538 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		3CE01E4B1FAA5A71008B8538 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,51 @@
 			isa = PBXGroup;
 			children = (
 				3C1C9A4F1FA8EB2000AFAFBE /* AppDelegate.swift */,
-				3C1C9A511FA8EB2000AFAFBE /* ViewController.swift */,
-				3C1C9A601FA8FFBA00AFAFBE /* UIViewExtension.swift */,
-				3C1C9A5E1FA8EE7900AFAFBE /* CustomCollectionViewCell.swift */,
 				3C1C9A531FA8EB2000AFAFBE /* Main.storyboard */,
+				3CE01E481FAA583D008B8538 /* Custom Views */,
+				3CE01E471FAA582B008B8538 /* Custom CollectionViewCells */,
+				3CE01E4A1FAA586F008B8538 /* Extensions */,
+				3CE01E491FAA5858008B8538 /* ViewControllers */,
 				3C1C9A561FA8EB2000AFAFBE /* Assets.xcassets */,
 				3C1C9A581FA8EB2000AFAFBE /* Info.plist */,
 			);
 			path = TVTest;
+			sourceTree = "<group>";
+		};
+		3CE01E471FAA582B008B8538 /* Custom CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				3C1C9A5E1FA8EE7900AFAFBE /* CustomCollectionViewCell.swift */,
+				3CE01E3F1FAA1998008B8538 /* ImageViewCollectionViewCell.swift */,
+				3CE01E411FAA50F5008B8538 /* OverlayCollectionViewCell.swift */,
+			);
+			path = "Custom CollectionViewCells";
+			sourceTree = "<group>";
+		};
+		3CE01E481FAA583D008B8538 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CE01E451FAA5199008B8538 /* OverlayView.swift */,
+				3CE01E431FAA512A008B8538 /* OverlayView.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		3CE01E491FAA5858008B8538 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C1C9A511FA8EB2000AFAFBE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3CE01E4A1FAA586F008B8538 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3CE01E4B1FAA5A71008B8538 /* UIImageExtension.swift */,
+				3C1C9A601FA8FFBA00AFAFBE /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1C9A571FA8EB2000AFAFBE /* Assets.xcassets in Resources */,
+				3CE01E441FAA512A008B8538 /* OverlayView.xib in Resources */,
 				3C1C9A551FA8EB2000AFAFBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,10 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE01E401FAA1998008B8538 /* ImageViewCollectionViewCell.swift in Sources */,
 				3C1C9A521FA8EB2000AFAFBE /* ViewController.swift in Sources */,
+				3CE01E461FAA5199008B8538 /* OverlayView.swift in Sources */,
 				3C1C9A5F1FA8EE7900AFAFBE /* CustomCollectionViewCell.swift in Sources */,
 				3C1C9A611FA8FFBA00AFAFBE /* UIViewExtension.swift in Sources */,
 				3C1C9A501FA8EB2000AFAFBE /* AppDelegate.swift in Sources */,
+				3CE01E421FAA50F5008B8538 /* OverlayCollectionViewCell.swift in Sources */,
+				3CE01E4C1FAA5A71008B8538 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
