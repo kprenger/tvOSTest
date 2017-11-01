@@ -10,22 +10,8 @@ import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
     
+    var imageView: UIImageView?
     @IBOutlet weak var label: UILabel!
-    
-    override var canBecomeFocused: Bool {
-        return true
-    }
-    
-    func addGradient(_ color: UIColor) {
-        let gradient = CAGradientLayer()
-        gradient.frame = bounds
-        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradient.colors = [#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor, color.cgColor]
-        
-        contentView.layer.addSublayer(gradient)
-        contentView.bringSubview(toFront: label)
-    }
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         super.didUpdateFocus(in: context, with: coordinator)
@@ -40,6 +26,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
             motionEffects = []
         }
     }
+    
+    //MARK: - Custom focus changes
     
     func becomeFocusedUsingAnimationCoordinator(_ coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({ [weak self] () -> Void in

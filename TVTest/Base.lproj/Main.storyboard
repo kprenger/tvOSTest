@@ -58,13 +58,55 @@
                                             <constraint firstItem="4Wn-Va-tpd" firstAttribute="top" secondItem="tKz-9K-fhc" secondAttribute="top" constant="20" id="i9c-1u-o5f"/>
                                             <constraint firstAttribute="trailing" secondItem="4Wn-Va-tpd" secondAttribute="trailing" constant="20" id="ikZ-10-9B5"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="4Wn-Va-tpd" id="nKM-Me-RmP"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reusableImageCell" id="3au-dZ-Hhn" customClass="ImageViewCollectionViewCell" customModule="TVTest" customModuleProvider="target">
+                                        <rect key="frame" x="620" y="60" width="500" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label with 2 lines, probably" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv3-Nx-k8Y">
+                                                    <rect key="frame" x="20" y="20" width="460" height="260"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tv3-Nx-k8Y" secondAttribute="trailing" constant="20" id="7NY-3F-ev1"/>
+                                            <constraint firstItem="tv3-Nx-k8Y" firstAttribute="top" secondItem="3au-dZ-Hhn" secondAttribute="top" constant="20" id="YeW-l6-rte"/>
+                                            <constraint firstItem="tv3-Nx-k8Y" firstAttribute="leading" secondItem="3au-dZ-Hhn" secondAttribute="leading" constant="20" id="a9D-of-r2j"/>
+                                            <constraint firstAttribute="bottom" secondItem="tv3-Nx-k8Y" secondAttribute="bottom" constant="20" id="fob-bM-5tS"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="tv3-Nx-k8Y" id="Xpo-BX-DoK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reusableOverlayCell" id="AzZ-Ln-a4S" customClass="OverlayCollectionViewCell" customModule="TVTest" customModuleProvider="target">
+                                        <rect key="frame" x="1180" y="60" width="500" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dp9-Ag-M4Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="label" destination="4Wn-Va-tpd" id="nKM-Me-RmP"/>
+                                            <outlet property="imageView" destination="dp9-Ag-M4Q" id="UJd-B8-gl7"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
